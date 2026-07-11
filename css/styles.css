@@ -77,7 +77,6 @@ nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
   font-size: 0.95rem; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--coral); font-weight: 700; margin-bottom: 0.9rem;
 }
-.hero-wave { position: absolute; right: -40px; top: 20px; width: 480px; max-width: 55vw; opacity: 0.5; pointer-events: none; }
 
 .btn {
   display: inline-block; background: var(--teal); color: #fff; font-weight: 600;
@@ -185,6 +184,5 @@ details.card[open] summary > p { display: none; }
 .prose p { margin-bottom: 1rem; }
 
 @media (max-width: 640px) {
-  .hero-wave { display: none; }
   .news-item { flex-direction: column; gap: 0.15rem; }
 }
