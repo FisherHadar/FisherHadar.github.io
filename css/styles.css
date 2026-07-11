@@ -1,0 +1,190 @@
+/* ============================================================
+   CARED Lab: Computational Approaches to Research in
+   Emotion & Depression
+   ============================================================ */
+
+:root {
+  --ink: #21303a;          /* main text */
+  --ink-soft: #4d5f6c;     /* secondary text */
+  --teal: #0e6b63;         /* primary brand */
+  --teal-dark: #0a4f49;
+  --coral: #dd6b4d;        /* accent */
+  --paper: #faf8f4;        /* page background */
+  --card: #ffffff;
+  --line: #e5dfd5;
+  --tag-bg: #eef4f0;
+  --max: 1080px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.06rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1, h2, h3, .brand {
+  font-family: "Fraunces", Palatino, Georgia, serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.4rem; }
+
+/* ---------- Header / nav ---------- */
+header.site {
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+  position: sticky; top: 0; z-index: 10;
+}
+.nav-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.9rem 0; gap: 1rem; flex-wrap: wrap;
+}
+.brand { font-size: 1.35rem; color: var(--ink); letter-spacing: 0.2px; display: flex; align-items: center; gap: 0.5rem; }
+.brand-mark { height: 46px; width: auto; }
+.brand:hover { text-decoration: none; }
+.brand .dot { color: var(--coral); }
+nav.main { display: flex; gap: 1.4rem; flex-wrap: wrap; }
+nav.main a {
+  color: var(--ink-soft); font-weight: 600; font-size: 0.97rem;
+  padding-bottom: 2px; border-bottom: 2px solid transparent;
+}
+nav.main a:hover { color: var(--teal); text-decoration: none; }
+nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
+
+/* ---------- Hero ---------- */
+.hero { padding: 4.2rem 0 3.4rem; position: relative; overflow: hidden; }
+.hero h1 {
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  max-width: 21ch;
+  margin-bottom: 1.1rem;
+}
+.hero h1 em { font-style: italic; color: inherit; }
+.hero p.lede {
+  font-size: 1.18rem; color: var(--ink-soft); max-width: 62ch; margin-bottom: 1.6rem;
+}
+.hero-logo { max-width: 460px; width: 90%; height: auto; display: block; margin-bottom: 1.6rem; }
+.hero .full-name {
+  font-size: 0.95rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--coral); font-weight: 700; margin-bottom: 0.9rem;
+}
+.hero-wave { position: absolute; right: -40px; top: 20px; width: 480px; max-width: 55vw; opacity: 0.5; pointer-events: none; }
+
+.btn {
+  display: inline-block; background: var(--teal); color: #fff; font-weight: 600;
+  padding: 0.62rem 1.3rem; border-radius: 6px; margin-right: 0.7rem; margin-top: 0.3rem;
+}
+.btn:hover { background: var(--teal-dark); text-decoration: none; }
+.btn.ghost { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+.btn.ghost:hover { background: var(--tag-bg); }
+
+/* ---------- Sections ---------- */
+section.band { padding: 3rem 0; }
+section.band.alt { background: #f2ede4; }
+.kicker {
+  font-size: 0.85rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--coral); font-weight: 700; margin-bottom: 0.5rem;
+}
+section h2 { font-size: 1.75rem; margin-bottom: 1.4rem; }
+
+/* ---------- Cards ---------- */
+.grid { display: grid; gap: 1.4rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: start; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+  padding: 1.5rem 1.5rem 1.3rem;
+}
+.card h3 { font-size: 1.22rem; margin-bottom: 0.6rem; color: var(--teal-dark); }
+.card p { color: var(--ink-soft); font-size: 0.99rem; }
+.card .icon { font-size: 1.6rem; margin-bottom: 0.7rem; display: block; }
+
+/* ---------- Publications ---------- */
+.year-heading {
+  font-family: "Fraunces", Georgia, serif; font-size: 1.45rem; color: var(--coral);
+  margin: 2.2rem 0 0.9rem; border-bottom: 1px solid var(--line); padding-bottom: 0.3rem;
+}
+ul.pubs { list-style: none; }
+ul.pubs li {
+  margin-bottom: 1.05rem; padding-left: 1.1rem; position: relative;
+  color: var(--ink-soft); font-size: 0.99rem;
+}
+ul.pubs li::before { content: "▪"; color: var(--coral); position: absolute; left: 0; top: 0.1rem; }
+ul.pubs .t { color: var(--ink); }
+ul.pubs strong { color: var(--ink); }
+.doi { font-size: 0.88rem; white-space: nowrap; }
+
+/* ---------- People ---------- */
+.person { display: flex; gap: 1.4rem; align-items: flex-start; flex-wrap: wrap; }
+.avatar {
+  width: 130px; height: 130px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, var(--teal) 0%, #4da79e 100%);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-family: "Fraunces", Georgia, serif; font-size: 2.6rem;
+  object-fit: cover; border: 3px solid var(--card); box-shadow: 0 2px 10px rgba(33, 48, 58, 0.15);
+}
+.person .bio { flex: 1; min-width: 260px; }
+.person h3 { font-size: 1.35rem; margin-bottom: 0.15rem; }
+.person .role { color: var(--coral); font-weight: 600; margin-bottom: 0.8rem; }
+
+/* ---------- News ---------- */
+.news-item { display: flex; gap: 1.2rem; margin-bottom: 1.5rem; align-items: baseline; }
+.news-date {
+  flex-shrink: 0; width: 7.2rem; font-weight: 700; color: var(--teal);
+  font-size: 0.92rem; letter-spacing: 0.02em;
+}
+.news-body { color: var(--ink-soft); }
+.news-body b { color: var(--ink); }
+
+/* ---------- Contact ---------- */
+.contact-box { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.6rem; }
+.contact-box p { margin-bottom: 0.5rem; }
+
+/* ---------- Footer ---------- */
+footer.site {
+  border-top: 1px solid var(--line); margin-top: 3rem;
+  padding: 2rem 0 2.4rem; color: var(--ink-soft); font-size: 0.92rem;
+}
+footer.site .cols { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+
+h3.principle { font-size: 1.3rem; margin: 1.8rem 0 0.5rem; color: var(--teal-dark); }
+
+/* ---------- Expandable research cards ---------- */
+details.card summary {
+  cursor: pointer; list-style: none; position: relative;
+}
+details.card summary::-webkit-details-marker { display: none; }
+details.card summary .more {
+  display: inline-block; margin-top: 0.8rem; font-weight: 700; font-size: 0.88rem;
+  color: var(--coral);
+}
+details.card summary .more::after { content: " +"; }
+details.card[open] summary .more { display: none; }
+details.card summary:hover .more { text-decoration: underline; }
+details.card summary:hover h3 { color: var(--coral); }
+details.card[open] summary > p { display: none; }
+.card-full { margin-top: 0.2rem; }
+.card-full p { color: var(--ink-soft); font-size: 0.99rem; margin-bottom: 0.8rem; }
+.card-full b { color: var(--ink); }
+
+/* ---------- Misc ---------- */
+.tag {
+  display: inline-block; background: var(--tag-bg); color: var(--teal-dark);
+  border-radius: 999px; padding: 0.12rem 0.75rem; font-size: 0.83rem;
+  font-weight: 600; margin: 0 0.35rem 0.45rem 0;
+}
+.note { font-size: 0.9rem; color: var(--ink-soft); font-style: italic; }
+.prose { max-width: 70ch; }
+.prose p { margin-bottom: 1rem; }
+
+@media (max-width: 640px) {
+  .hero-wave { display: none; }
+  .news-item { flex-direction: column; gap: 0.15rem; }
+}
