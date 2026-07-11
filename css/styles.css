@@ -62,6 +62,7 @@ nav.main a:hover { color: var(--teal); text-decoration: none; }
 nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
 
 /* ---------- Hero ---------- */
+.hero-wave { display: none; }
 .hero { padding: 4.2rem 0 3.4rem; position: relative; overflow: hidden; }
 .hero h1 {
   font-size: clamp(2rem, 4.6vw, 3.1rem);
