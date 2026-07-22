@@ -69,7 +69,7 @@ nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
   max-width: 21ch;
   margin-bottom: 1.1rem;
 }
-.hero h1 em { font-style: italic; color: inherit; }
+.hero h1 em { font-style: normal; color: inherit; }
 .hero p.lede {
   font-size: 1.18rem; color: var(--ink-soft); max-width: 62ch; margin-bottom: 1.6rem;
 }
