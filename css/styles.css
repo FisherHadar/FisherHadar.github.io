@@ -63,17 +63,17 @@ nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
 
 /* ---------- Hero ---------- */
 .hero-wave { display: none; }
-.hero { padding: 4.2rem 0 3.4rem; position: relative; overflow: hidden; }
+.hero { padding: 4.2rem 0 3.4rem; position: relative; overflow: hidden; text-align: center; }
 .hero h1 {
   font-size: clamp(2rem, 4.6vw, 3.1rem);
-  max-width: 21ch;
-  margin-bottom: 1.1rem;
+  max-width: 45ch;
+  margin: 0 auto 1.1rem;
 }
 .hero h1 em { font-style: normal; color: inherit; }
 .hero p.lede {
-  font-size: 1.18rem; color: var(--ink-soft); max-width: 62ch; margin-bottom: 1.6rem;
+  font-size: 1.18rem; color: var(--ink-soft); max-width: 62ch; margin: 0 auto 1.6rem;
 }
-.hero-logo { max-width: 460px; width: 90%; height: auto; display: block; margin-bottom: 1.6rem; }
+.hero-logo { max-width: 460px; width: 90%; height: auto; display: block; margin: 0 auto 1.6rem; }
 .hero .full-name {
   font-size: 0.95rem; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--coral); font-weight: 700; margin-bottom: 0.9rem;
