@@ -185,6 +185,12 @@ details.card[open] summary > p { display: none; }
   font-weight: 600; margin: 0 0.35rem 0.45rem 0;
 }
 .note { font-size: 0.9rem; color: var(--ink-soft); font-style: italic; }
+/* ---------- RTL (Hebrew page) ---------- */
+[dir="rtl"] .btn { margin-right: 0; margin-left: 0.7rem; }
+[dir="rtl"] ul.pubs li { padding-left: 0; padding-right: 1.1rem; }
+[dir="rtl"] ul.pubs li::before { left: auto; right: 0; }
+.nav-he { opacity: 0.9; }
+
 .prose { max-width: 70ch; }
 .prose p { margin-bottom: 1rem; }
 
