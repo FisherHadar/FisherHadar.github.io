@@ -1,0 +1,51 @@
+{
+  "_comment": "Edit this file to add/remove pages or tune behaviour. See README.md.",
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36",
+  "timeout_seconds": 30,
+  "max_attempts": 3,
+  "backoff_seconds": [
+    5,
+    15,
+    45
+  ],
+  "polite_delay_seconds": [
+    2,
+    5
+  ],
+  "notify": {
+    "macos_notification": true,
+    "always_write_found_log": true
+  },
+  "signal_phrases": [
+    "now accepting",
+    "applications are open",
+    "open call",
+    "2027-2028",
+    "2027-28",
+    "apply by",
+    "deadline"
+  ],
+  "closed_phrase": "this call for applications has now closed",
+  "ignore_line_patterns": [
+    "^(©|copyright)\\s*\\d{4}",
+    "form_build_id|form_token",
+    "^\\s*(printer-friendly|share this|subscribe)\\s*$"
+  ],
+  "pages": [
+    {
+      "name": "fellowships",
+      "url": "https://cyber.harvard.edu/getinvolved/fellowships",
+      "notify_on_change": true
+    },
+    {
+      "name": "open-call-2026-2027",
+      "url": "https://cyber.harvard.edu/page/open-call-fellowship-applications-2026-and-2026-2027",
+      "notify_on_change": true
+    },
+    {
+      "name": "news",
+      "url": "https://cyber.harvard.edu/news",
+      "notify_on_change": true
+    }
+  ]
+}

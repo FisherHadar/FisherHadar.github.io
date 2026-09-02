@@ -1,0 +1,4 @@
+# Runtime state - local to each machine, never worth versioning.
+snapshots/
+state.json
+*.log
