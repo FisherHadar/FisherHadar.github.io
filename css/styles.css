@@ -87,6 +87,15 @@ nav.main a.active { color: var(--teal); border-bottom-color: var(--coral); }
 .btn.ghost { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
 .btn.ghost:hover { background: var(--tag-bg); }
 
+/* ---------- Intro video (home) ---------- */
+section.intro-video { padding-top: 0.4rem; text-align: center; }
+.video-frame {
+  max-width: 880px; margin: 0 auto; aspect-ratio: 16 / 9;
+  border-radius: 12px; overflow: hidden; background: #d1d6d5;
+  border: 1px solid var(--line); box-shadow: 0 6px 24px rgba(33, 48, 58, 0.12);
+}
+.video-frame video { display: block; width: 100%; height: 100%; }
+
 /* ---------- Sections ---------- */
 section.band { padding: 3rem 0; }
 section.band.alt { background: #f2ede4; }
